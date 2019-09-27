@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Oss Player</title>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/window.css">
+
+	<script type="text/javascript" src='Scripts/main.js'></script>
+	<script type="text/javascript" src='Scripts/Settings/Settings.js'></script>
+	<script type="text/javascript" src='Scripts/Playlists/Playlists.js'></script>
+	<script type="text/javascript" src='Scripts/Player/Player.js'></script>
+	<script type="text/javascript" src='Scripts/ImageResizer/ImageResizer.js'></script>
+
+	<script type="text/javascript" src='Scripts/UI/UISettings.js'></script>
+	<script type="text/javascript" src='Scripts/UI/UIMapsList.js'></script>
+</head>
+<body>
+	<div class='window-wrapper'>
+		<div class='window-loading' hide>
+			<img src='img/osu-logo.png' class='loading-logo'>
+			<div class="sk-folding-cube">
+				<div class="sk-cube1 sk-cube"></div>
+				<div class="sk-cube2 sk-cube"></div>
+				<div class="sk-cube4 sk-cube"></div>
+				<div class="sk-cube3 sk-cube"></div>
+			</div>
+		</div>
+		<div class='window-grid'>
+			<div class='window-topbar-wrapper'>
+				<div class='window-topbar' window-drag>
+					<img class='window-logo' src='img/oss.png'>
+					<div class='window-frcontainer' window-nodrag>
+						<div>
+							<input class='search-box' type='text' placeholder='Search'>
+						</div>
+						<div class='window-control-separator'></div>
+						<div class='window-control-button window-sync'><i class="fas fa-sync"></i></div>
+						<div class='window-control-button window-settings-button'><i class="fas fa-cog"></i></div>
+						<div class='window-control-separator'></div>
+						<div class='window-control-button window-minimize'><i class="fas fa-window-minimize"></i></div>
+						<div class='window-control-button window-maximize'><i class="far fa-window-maximize"></i></div>
+						<div class='window-control-button window-close'><i class="fas fa-window-close"></i></div>
+					</div>
+				</div>
+			</div>
+			<div class='window-main'>
+				<div class='app-section' section='main' show>
+					<div class='songs-list'></div>
+				</div>
+				<div class='app-section' section='search'></div>
+				<div class='app-section' section='config'></div>
+			</div>
+			<div class='window-player'>
+				<div class='player-leftpanel'></div>
+				<div class='player-midpanel'>
+					<div class='song-title'>Titulo de la cancion</div>
+					<div class='song-artist'>Nombre del artista</div>
+					<div class='song-progress-container'>
+						<div class='song-progress-bar'></div>
+					</div>
+				</div>
+				<div class='player-rigthpanel'></div>
+			</div>
+		</div>
+		<div class='window-modal' hide>
+			<div class='window-settings'>
+				<div>
+					<img class='pippi' src='img/pippi.jpg'>
+				</div>
+				<div class='oss-settings'>
+					<div class='oss-settings-controls'>
+						<button class='oss-settings-square-button oss-settings-close'><i class="fas fa-times"></i></button>
+					</div>
+					<div class='oss-settings-label'>Osu songs path:</div>
+					<div class='oss-settings-block'>
+						<input class='oss-settings-input oss-settings-dirinput' type='text'>
+						<button class='oss-settings-square-button oss-settings-savedir'><i class="fas fa-save"></i></button>
+						<button class='oss-settings-square-button oss-settings-opendir'><i class="fas fa-folder-open"></i></button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

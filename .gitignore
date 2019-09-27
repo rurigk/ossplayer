@@ -1,0 +1,7 @@
+*.ns
+*.cache
+playlists
+*.log
+bgcache/
+node_modules/
+settings.json

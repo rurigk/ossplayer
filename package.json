@@ -1,0 +1,20 @@
+{
+	"main": "player.js",
+	"name": "ossplayer",
+	"version": "1.0.0",
+	"description": "",
+	"scripts": {
+		"start": "electron ."
+	},
+	"author": "Rurigk",
+	"license": "SEE LICENCE IN LICENCE.MD",
+	"dependencies": {
+		"electron": "^5.0.1",
+		"puid": "^1.0.7"
+	},
+	"chromium-args": "--password-store=basic",
+	"devDependencies": {
+		"electron": "^5.0.1",
+		"electron-rebuild": "^1.8.4"
+	}
+}
